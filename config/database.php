@@ -117,4 +117,10 @@ return [
 
     ],
 
+    'elasticsearch' => [
+        'hosts' => [
+            'host' => env('ES_HOSTS')
+        ]
+    ]
+
 ];

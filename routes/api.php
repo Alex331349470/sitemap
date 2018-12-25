@@ -15,7 +15,9 @@ use Illuminate\Http\Request;
 
 $api = app('Dingo\Api\Routing\Router');
 
-$api->version('v1.0.0', function ($api) {
+$api->version('v1.0.0',[
+    'namespace' => 'App\Http\Controllers\Api'
+], function ($api) {
     $api->get('version', function () {
         return response('this is a test for dingo api');
     });
