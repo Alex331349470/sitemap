@@ -164,7 +164,7 @@ npm run watch-poll
 | "spatie/laravel-permission" | laravel ACL 权限组件 | 后台ACL |
 | "tymon/jwt-auth": "1.0.0-rc.2" | json web token | 认证 |
 | "encore/laravel-admin": "1.5.*" | laravel后台系统 UI laravelAdmin-LTE | laravel admin 后台集成系统 |
-
+| "rap2hpoutre/laravel-log-viewer" | laravel.log 查看器 | debug |
 
 
 
