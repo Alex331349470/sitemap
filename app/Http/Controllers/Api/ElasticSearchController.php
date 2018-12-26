@@ -28,13 +28,24 @@ class ElasticSearchController extends Controller
         ];
 
         $data = $this->elas->search($params);
-        
+
         return $this->response->array($data)->setStatusCode(200);
     }
 
     public function splicSearch(Request $request)
     {
+        $params = [
+            'index' => 'doc',
+            'body' => [
+                'query' => [
+                    'match' => $request->name
+                ]
+            ]
+        ];
 
+        $data = $this->elas->search($params);
+
+        return $this->response->array($data);
     }
 }
 

@@ -24,4 +24,7 @@ $api->version('v1.0.0',[
 
     $api->get('search', 'ElasticSearchController@search')
         ->name('api.search.search');
+
+    $api->get('splicSearch', 'ElasticSearchController@splicSearch')
+        ->name('api.splicSearch.splicSearch');
 });
