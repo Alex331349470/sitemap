@@ -21,4 +21,7 @@ $api->version('v1.0.0',[
     $api->get('version', function () {
         return response('this is a test for dingo api');
     });
+
+    $api->get('search', 'ElasticSearchController@search')
+        ->name('api.search.search');
 });
