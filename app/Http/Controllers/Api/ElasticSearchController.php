@@ -45,7 +45,10 @@ class ElasticSearchController extends Controller
 
         $data = $this->elas->search($params);
 
-        return $this->response->array($data);
+        return $this->response->array($data)->setStatusCode(200);
+    }
+
+    public function crawlerSearch(Request $request)
+    {
     }
 }
-
