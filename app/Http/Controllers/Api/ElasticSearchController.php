@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Models\Index;
 use Illuminate\Http\Request;
+use Goutte\Client;
 
 class ElasticSearchController extends Controller
 {
@@ -50,5 +51,9 @@ class ElasticSearchController extends Controller
 
     public function crawlerSearch(Request $request)
     {
+        $client = new Client();
+        $crawler = $client->request('GET', $request->url);
+
+        dd($crawler);
     }
 }

@@ -15,7 +15,7 @@ use Illuminate\Http\Request;
 
 $api = app('Dingo\Api\Routing\Router');
 
-$api->version('v1.0.0',[
+$api->version('v1.0.0', [
     'namespace' => 'App\Http\Controllers\Api'
 ], function ($api) {
     $api->get('version', function () {
@@ -27,4 +27,7 @@ $api->version('v1.0.0',[
 
     $api->get('splicSearch', 'ElasticSearchController@splicSearch')
         ->name('api.splicSearch.splicSearch');
+
+    $api->get('crawlerSearch', 'ElasticSearchController@crawlerSearch')
+        ->name('api.crawlerSearch.crawlerSearch');
 });
