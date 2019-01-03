@@ -47,5 +47,6 @@ class ElasticSearchController extends Controller
 
         return $this->response->array($data);
     }
+
 }
 
