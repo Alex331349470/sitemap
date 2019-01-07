@@ -11,5 +11,6 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index');
+    $router->redirect('/crawler','http://192.168.10.10:5000');
 
 });
