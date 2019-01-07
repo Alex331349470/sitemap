@@ -143,12 +143,15 @@ return [
     /*
      * 页面底部展示的版本.
      */
-    'version' => '1.5.x-dev',
+    'version' => 'sitemap v1.0.0',
 
     /*
      * 扩展设置.
      */
     'extensions' => [
-
+        'login-captcha' => [
+            // set to false if you want to disable this extension
+            'enable' => true,
+        ]
     ],
 ];
